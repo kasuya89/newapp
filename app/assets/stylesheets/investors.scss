@@ -1,0 +1,139 @@
+.investors {
+  background-color: $my-body-bg;
+
+  .head {
+    background-color: #235E78;
+    background-image: image-url('investor_banner.jpg');
+    padding-bottom: 3rem;
+    color: white;
+    h2 {
+      color: white;
+
+      a {
+        font-size: 1.2rem;
+        margin-left: 1rem;
+        color: #bbb;
+      }
+    }
+  }
+
+  .no-content {
+    padding-left: 2rem;
+    color: #666;
+  }
+
+  .sub-nav {
+    @media #{$small-only} {
+      display: none;
+    }
+  }
+  .search-form {
+    margin-top: 2rem;
+    background-color: white;
+    padding: 2rem 2rem 1rem 2rem;
+    margin-bottom: 2rem;
+    @media #{$small-only} {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  .investors-wrapper {
+    margin-bottom: 2rem;
+  }
+
+  .pagination {
+    margin-top: 2rem;
+  }
+
+  .investor {
+    background-color: white;
+    padding: 2rem 1rem;
+    margin: 0;
+    border: 1px solid #fcfcfc;
+    
+    img {
+      border-radius: 50%;
+      @media #{$large-up} {
+        width: 85%;
+      }
+    }
+
+    .name-area {
+      line-height: 1.5rem;
+      margin-bottom: 1rem;
+
+      .name {
+        display: inline;
+        a {
+          color: $primary-color;
+        }
+      }
+
+      .title {
+        margin-left: 1rem;
+        color: $primary-color;
+        display: inline;
+        vertical-align: text-bottom;
+        a {
+          color: $primary-color;
+        }
+      }
+
+      .type {
+        margin-left: 1rem;
+        display: inline;
+        vertical-align: text-bottom;
+        color: #eee;
+        font-size: 0.875rem;
+        padding: 0.325rem 0.5rem;
+        border-radius: 5px;
+        background-color: $primary-color;
+      }
+    }
+
+    .content {
+      color: #999;
+      margin-top: 1rem;
+
+      .description {
+        margin-bottom: 1.5rem;
+      }
+
+      .industry-area {
+        margin-top: 0.5rem;
+      }
+
+      .industry-label {
+        color: $primary-color;
+        opacity: 0.8;
+      }
+
+      .industry-content {
+        margin-left: 0.5rem;
+      }
+    }
+
+    .op {
+      .star-button, .deliver-button  {
+        padding: 1rem 2rem;
+        background-color: #f9f9f9;
+        margin-bottom: 1rem;
+        text-align: center;
+        color: #333;
+        a {
+          color: #333;
+        }
+        max-width: 10rem;
+        i {
+          margin-right: 0.5rem;
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: #eee;
+        }
+      }
+    }
+  }
+}

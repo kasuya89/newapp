@@ -1,0 +1,30 @@
+.trend {
+
+}
+
+.project-td {
+  //img {
+    //border-radius: 10rem;
+  //}
+
+  .title a {
+    color: #444;
+    font-weight: 600;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media #{$small-only} {
+    .title {
+      margin-left: -1rem;
+      a {
+        font-weight: normal;
+      }
+    }
+  }
+
+  .sub-title {
+    color: #666;
+  }
+}

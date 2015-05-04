@@ -1,0 +1,13 @@
+- content_for(:container) do
+  .row
+    .large-3.columns.container
+      .row
+        .large-12.columns
+          h4 Inbox
+    .large-8.columns.large-offset-1
+      - unless @conversations.empty?
+        = render partial: 'conversation', collection: @conversations
+      - else
+        .row
+          .large-12.columns.container style='height: 3rem; padding-top: 0.5rem'
+            p No Content

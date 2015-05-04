@@ -1,0 +1,116 @@
+.project-new {
+
+  .title {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .stage0 {
+    input.autocomplete {
+      margin-bottom: 0;
+    }
+    .autocomplete-wrapper-position {
+      position: relative;
+    }
+    .no-result {
+      margin-bottom: 1rem;
+      color: #666;
+    }
+
+    .select-industry-link {
+      display: inline-block;
+      margin-top: 0.2rem;
+    }
+
+    .autocomplete-wrapper {
+      position: absolute;
+      list-style-type: none;
+      margin-left: 0;
+      border: 1px solid #aaa;
+      z-index: 2;
+      background-color: white;
+      width: 100%;
+      li {
+        padding: 0.25rem 0.5rem;
+        &:hover {
+          background-color: #eee;
+        }
+      }
+      a {
+        display: block;
+        color: #333;
+      }
+    }
+  } 
+
+  .stage2 {
+    .purpose {
+      color: #888;
+    }
+    .cancel {
+      margin-left: 0.5rem;
+    }
+    .title {
+      display: inline-block;
+      padding: 0;
+      border: none;
+    } 
+
+    .job-box {
+      border: 1px solid #ddd;
+      padding: 1rem 0;
+      margin: 1rem;
+      table {
+        border: none;
+      }
+    }
+  }
+}
+
+.select-industry-modal {
+
+  .head, .categories {
+    overflow: auto;
+    max-height: 400px;
+
+    a:hover {
+      background-color: #DEF3FF;
+    }
+
+    a.cur {
+      background-color: #DEF3FF;
+    }
+
+    a {
+      display: block;
+      line-height: 2;
+    }
+  }
+
+  .categories {
+    .name {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+.select-industries {
+  margin-bottom: 0;
+  .no-content {
+    margin: 0.5rem 0;
+    margin-left: 1.375rem;
+    padding: 0.3rem 0;
+  }
+
+  .content {
+    border: 1px solid #ddd;
+    padding: 0.3rem 0.5rem;
+    margin: 0.5rem 0;
+    .revert {
+      margin-left: 0.3rem;
+      cursor: pointer;
+      color: #444;
+    }
+  }
+}

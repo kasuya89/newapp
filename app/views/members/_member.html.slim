@@ -1,0 +1,11 @@
+li
+  div.row
+    div.large-6.columns
+      = link_to user_path(member.user) do
+        - image_tag(member.user.avatar_url, size: "200x200")
+    div.large-6.columns
+      = link_to user_path(member.user) do
+        h4 #{member.user.name}
+      p #{t('member.roles.' + member.role)}
+      p #{member.title}
+      p #{member.description}

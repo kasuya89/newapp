@@ -1,0 +1,36 @@
+- content_for(:title) do 
+  | 项目一
+.project-show.top-blank
+  = render 'head'
+  = render 'star'
+  = render partial: 'show_tab', locals: { type: 'team' }
+  .row.team
+    .small-12.columns
+      .owner
+        .person
+          .row
+            .small-4.medium-3.columns
+              = image_tag @owner.avatar_url
+            .small-8.large-9.columns
+              .name 
+                = link_to @owner.name, user_path(@owner)
+              .job-title #{@owner_member.title}
+              .description #{@owner_member.description || @owner_member.user.description}
+      .story
+        h3.title 我们的故事
+        .team-story.description
+          | #{@project.team_story}
+      .members
+        h3.title 我们的成员
+        ul.small-block-grid-1.medium-block-grid-2
+          - @members.each do |m|
+            li
+              .person
+                .row
+                  .small-4.large-3.columns
+                    = image_tag m.user.avatar_url
+                  .small-8.large-9.columns
+                    .name 
+                      = link_to m.user.name, user_path(m.user)
+                    .job-title #{m.title}
+                    .description #{m.description || m.user.description}

@@ -1,0 +1,18 @@
+- content_for(:title) do
+  | 发现
+.explore
+  .row
+    .small-12.columns
+      = render partial: 'head', locals: { type: 'square' }
+      / 广场
+      .square
+        - if @recommends.blank?
+          p.no-content 暂无编辑推荐
+        - else
+          ul.small-block-grid-1.medium-block-grid-2.large-block-grid-3.start-projects-content
+            - @recommends.each do |recommend|
+              - project = recommend.project
+              = render partial: 'common/project_block_item', locals: { project: project }
+        .row
+          .small-12.columns.all-projects
+            = link_to '查看所有项目', all_explore_index_path

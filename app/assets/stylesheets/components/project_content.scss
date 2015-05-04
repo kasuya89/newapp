@@ -1,0 +1,19 @@
+.project-show, .project-edit {
+  .content {
+
+    .title {
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .team {
+      margin-top: 2rem;
+      .more-info {
+        text-align: center;
+        margin: 1rem 0;
+      }
+    }
+
+  }//content
+}

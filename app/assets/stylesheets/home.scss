@@ -1,0 +1,136 @@
+.start-page {
+  background-color: $my-body-bg;
+}
+
+.start-content {
+  padding-top: 5.325rem;
+  padding-bottom: 5.325rem;
+  background-color: #356480;
+  background-image: image-url('banner.jpg');
+  background-size: cover;
+  color: #eee;
+  
+  .heading, .sub-heading {
+    color: #eee;
+  }
+
+  .button {
+    margin-top: 1rem;
+    background-color: #eee;
+    border-color: #356480;
+    color: $primary-color;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    &:hover {
+      color: darken($primary-color, 10);
+    }
+  }
+}
+
+.refine-projects-content {
+  background-color: white;
+  padding-top: 1.875rem;
+
+  .project {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px dashed #AAA;
+    padding-bottom: 1rem;
+
+    img {
+      width: 80%;
+    }
+    
+    .summary {
+      padding-top: 1rem;
+      padding-bottom: 0.5rem;
+      margin-bottom: 0rem;
+    }
+
+    .info {
+      margin-bottom: 0.5rem;
+      span {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+.start-projects-content, .start-investors-content, .start-jobs-content{
+  h2 {
+    text-align: center;
+    margin: 1.5rem 0 1rem 0;
+    font-size: 1.2rem;
+  }
+
+  .investor img{
+    border-radius: 50%;
+  }
+
+  .head {
+    min-height: 6.5rem;
+    h5 {
+      font-size: 1.025rem;
+    }
+  }
+
+  .investor .content {
+    text-align: center;
+    .tag {
+      color: #999;
+    }
+
+    .investments * {
+      color: #666;
+    }
+  }
+
+  .box {
+    border: 1px solid $my-project-border-color;
+    background-color: white;
+    padding: 2rem 0;
+
+    .head {
+      padding: 0rem 2rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px dashed #ddd;
+      padding-bottom: 2rem;
+
+      img {
+        border: 1px solid $my-project-border-color;
+      }
+
+      .subtitle {
+        margin: 1rem 0 0;
+        color: #999;
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .content {
+      padding: 0rem 2rem;
+      line-height: 2;
+      height: 5rem;
+
+      .type {
+        width: 100%;
+        color: #999;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .item {
+        color: #666;
+        white-space: nowrap;
+        width: 100%;
+        text-align: right;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

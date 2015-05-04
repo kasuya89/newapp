@@ -1,0 +1,14 @@
+.project
+  - project = recommend.project
+  = link_to project do
+    - image_tag project.screenshot_cover_try_image_url
+  p.summary
+    span #{project.name}
+    |  - 
+    span #{project.oneword}
+  p.info
+    span 关注: #{project.star_count}
+    span 约谈: #{project.talk_count}
+    span 投资: #{project.investment_count}
+  p
+    = link_to '了解更多...', project

@@ -1,0 +1,52 @@
+.team {
+  .title {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .owner {
+    padding: 2rem 0 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+    font-size: 110%;
+  }
+
+  .members {
+    ul {
+      line-height: 1.2;
+    }
+    li {
+      border-bottom: 1px dashed #ddd;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.team-content {
+  #owner-avatar {
+    margin-top: 0.5rem;
+  }
+  .edit {
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    z-index: 2;
+  }
+
+  .cancel {
+    margin-left: 0.5rem;
+  }
+
+  .team-story-wrapper {
+    color: #888;
+    min-height: 6rem;
+  }
+
+  .members .person .name {
+    padding-bottom: 0;
+  }
+  
+  .invite-tips {
+    color: #888;
+  }
+}

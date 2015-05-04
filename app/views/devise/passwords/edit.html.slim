@@ -1,0 +1,15 @@
+.user-new.top-blank
+  .row
+    .small-12.medium-7.large-5.medium-centered.columns
+      .row
+        .small-12.columns
+          = simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }, wrapper: :foundation_no_style) do |f|
+            h4.title
+              | 修改我的密码
+            = f.error_notification
+            = f.input :reset_password_token, as: :hidden
+            = f.full_error :reset_password_token
+            = f.input :password, label: "新密码", required: true, autofocus: true
+            = f.input :password_confirmation, label: "再次确认", required: true
+            = f.button :submit, "确认修改", class: 'expand'
+          = render "devise/shared/links"

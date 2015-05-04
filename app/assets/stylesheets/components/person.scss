@@ -1,0 +1,33 @@
+.person {
+  padding: 1rem 0;
+
+  img {
+    border-radius: 10rem;
+  }
+
+  .name {
+    //padding-bottom: 0.5rem;
+    @media #{$small-only} {
+      padding-bottom: 0.2rem;
+    }
+    a {
+      color: #333;
+      font-weight: 500;
+      font-size: 110%;
+    }
+  }
+
+  .job-title {
+    color: #999;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  .description {
+    color: #999;
+    margin-top: 0.5rem;
+    line-height: 1.2;
+    font-size: 95%;
+  }
+
+}// person

@@ -1,0 +1,88 @@
+.job-show {
+  background-color: $my-body-bg;
+
+  .head {
+    background-color: #79B0EA;
+    color: white;
+    h1 {
+      color: white;
+    }
+    margin-bottom: 2rem;
+  }
+  
+  .no-content {
+    padding-left: 2rem;
+    color: #666;
+  }
+
+  .content {
+    .search {
+      background-color: white;
+      padding: 2rem;
+      border: 1px solid #eee;
+    }
+
+    .jobs-wrapper {
+      background-color: white;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .job-project {
+    border-bottom: 1px solid #eee;
+    margin: 1rem 0;
+    padding: 2rem 1rem;
+
+    .name {
+      display: inline;
+      margin-right: 1rem;
+      a {
+        color: #333;
+      }
+    }
+
+    .sub-name {
+      display: inline;
+      color: #888;
+      font-size: 90%;
+    }
+
+    .job-content {
+      color: #888;
+      padding-top: 1rem;
+    }
+
+    .job-info {
+      padding-top: 1rem;
+      color: #888;
+      font-size: 90%;
+
+      .info {
+        margin-right: 0.5rem;
+      }
+
+      span[class|=fi] {
+        margin-right: 0.2rem;
+      }
+
+      .fa {
+        margin-right: 0.3125rem;
+      }
+
+      .city, .category {
+        margin-right: 0.5rem;
+        a {
+          color: #999;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.job_closed td {
+  color: #999;
+}
